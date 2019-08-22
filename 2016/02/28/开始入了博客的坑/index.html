@@ -62,7 +62,7 @@
 <meta property="og:site_name" content="攻防之间">
 <meta property="og:description" content="写在前面 你不要你觉得，我只要我觉得。湖人总冠军！！">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-08-22T07:19:18.704Z">
+<meta property="og:updated_time" content="2019-08-22T07:39:01.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="这是文章标题">
 <meta name="twitter:description" content="写在前面 你不要你觉得，我只要我觉得。湖人总冠军！！">
@@ -249,7 +249,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="sharkkb">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1566443501&di=e239112304e00f9b6a614a00527d1de3&src=http://www.zikao365.com/upload/html/2016/04/29/wa45def41d948c4bcea21f6c8c1b791198.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -318,16 +318,10 @@
     
       
 
-        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
-  <img id="wechat_subscriber_qcode" src="/" alt="sharkkb wechat" style="width: 200px; max-width: 100%;">
-  <div></div>
-</div>
-
-      
         
       
         <div id="reward-container">
-  <div></div>
+  <div><p style="font-size:14px; color:#34495e; margin:0 0 5px 0;">赞赏一下吧～ 还可以关注公众号订阅最新内容</p></div>
   <button id="reward-button" disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
     打赏
   </button>
@@ -372,6 +366,9 @@
 
           </div>
           
+    
+    <div class="comments" id="gitalk-container"></div>
+  
 
         </div>
           
@@ -400,6 +397,9 @@
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1566443501&di=e239112304e00f9b6a614a00527d1de3&src=http://www.zikao365.com/upload/html/2016/04/29/wa45def41d948c4bcea21f6c8c1b791198.jpg"
+      alt="sharkkb">
   <p class="site-author-name" itemprop="name">sharkkb</p>
   <div class="site-description motion-element" itemprop="description"></div>
 </div>
@@ -635,6 +635,25 @@
   
   <script src="/js/scrollspy.js?v=7.3.0"></script><script src="/js/post-details.js?v=7.3.0"></script>
 
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: 'c75f5be0edeb1fe259fe',
+      clientSecret: 'ba325eee40e7442d67a8ae6685221d1457a4a3ef',
+      repo: 'comments',
+      owner: 'sharkkb',
+      admin: ['sharkkb'],
+      id: '9ac8a99fa949bbadca7bab4798373e8c',
+        language: 'zh-CN',
+      
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 </body>
 </html>

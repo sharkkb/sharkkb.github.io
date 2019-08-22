@@ -296,6 +296,9 @@
 
           </div>
           
+    
+    <div class="comments" id="gitalk-container"></div>
+  
 
         </div>
           
@@ -315,6 +318,9 @@
         <div class="site-overview">
 
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image"
+      src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1566443501&di=e239112304e00f9b6a614a00527d1de3&src=http://www.zikao365.com/upload/html/2016/04/29/wa45def41d948c4bcea21f6c8c1b791198.jpg"
+      alt="sharkkb">
   <p class="site-author-name" itemprop="name">sharkkb</p>
   <div class="site-description motion-element" itemprop="description"></div>
 </div>
@@ -534,6 +540,25 @@
     <script src="/js/scrollspy.js?v=7.3.0"></script><script src="/js/post-details.js?v=7.3.0"></script>
 
   
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID: 'c75f5be0edeb1fe259fe',
+      clientSecret: 'ba325eee40e7442d67a8ae6685221d1457a4a3ef',
+      repo: 'comments',
+      owner: 'sharkkb',
+      admin: ['sharkkb'],
+      id: '4360a9ea3ed043f672f556b22c311a4c',
+        language: 'zh-CN',
+      
+      distractionFreeMode: 'true'
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+</script>
 
 </body>
 </html>
